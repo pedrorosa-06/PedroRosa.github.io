@@ -214,9 +214,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--text-muted);
-            font-size: 0.8rem;
-            letter-spacing: 2px;
+        }
+
+        .work-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .work-card h4 { font-size: 1.5rem; margin: 0 0 10px 0; }
@@ -349,13 +352,17 @@
 
         <div class="works-grid">
             <a href="https://github.com/pedrorosa-06/Minesweeper-Kotlin" target="_blank" class="work-card">
-                <div class="work-img">[ MINESWEEPER KOTLIN ]</div>
+                <div class="work-img">
+                    <img src="Mine Sweeper.jpg" alt="Minesweeper Game">
+                </div>
                 <h4>Campo DEISIado</h4>
                 <p>Kotlin • OOP • Algorithmic Logic</p>
             </a>
 
             <a href="https://github.com/pedrorosa-06/Data-Analysis-Java" target="_blank" class="work-card">
-                <div class="work-img">[ DATA ANALYSIS JAVA ]</div>
+                <div class="work-img">
+                    <img src="data-analysis-thumb.png" alt="Data Analysis Project">
+                </div>
                 <h4>Demographic Analysis System</h4>
                 <p>Java • Data Structures • Statistics</p>
             </a>
