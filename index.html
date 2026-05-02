@@ -223,25 +223,6 @@
 
         .work-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
 
-        .swot-section { padding: 120px 5%; border-top: 1px solid var(--border); }
-
-        .swot-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1px; 
-            background-color: var(--border);
-            border: 1px solid var(--border);
-            margin-top: 60px;
-        }
-
-        .swot-box { background-color: var(--bg); padding: 60px; }
-
-        .swot-box h4 { font-size: 1.8rem; margin: 0 0 30px 0; }
-
-        .swot-box ul { list-style: none; padding: 0; margin: 0; }
-
-        .swot-box li { font-size: 1rem; color: var(--text-muted); margin-bottom: 15px; line-height: 1.6; }
-
         footer { border-top: 1px solid var(--border); display: flex; }
 
         .footer-cta {
@@ -293,7 +274,6 @@
             .expertise-grid { flex-direction: column; gap: 40px; }
             .col-left, .col-right { width: 100%; }
             .col-right { flex-direction: column; gap: 40px; }
-            .swot-grid { grid-template-columns: 1fr; }
             footer { flex-direction: column; }
             .footer-cta, .footer-info { width: 100%; border-right: none; border-bottom: 1px solid var(--border); }
         }
@@ -319,16 +299,15 @@
 
     <section id="about" class="about-section">
         <div class="about-image">
-            <img src="imagem cv.png" alt="Pedro Rosa - Computer Engineering Student">
+            <img src="imagem cv.png" alt="Pedro Rosa">
         </div>
         <div class="about-content">
             <span class="accent-text">About</span>
-            <p class="desc">Computer Engineering student at Universidade Lusófona with a solid background in Sciences. I am passionate about how technology solves real-world problems and I am currently focused on mastering software development and programming logic.</p>
+            <p class="desc">Computer Engineering student at Universidade Lusófona. Passionate about algorithms, data structures, and the mathematical logic behind sports betting systems.</p>
             
             <div class="btn-group">
                 <a href="CV_Pedro_Rosa.pdf.pdf" class="btn" target="_blank">Download CV</a>
-                <a href="#" class="btn" target="_blank">Video Pitch</a>
-                <a href="#" class="btn" target="_blank">Cover Letter</a>
+                <a href="Cover_Letter_Pedro_Rosa.pdf" class="btn" target="_blank">Cover Letter</a>
             </div>
         </div>
     </section>
@@ -337,39 +316,25 @@
         <div class="expertise-grid">
             <div class="col-left">
                 <span class="accent-text">Expertise</span>
-                <h2>Algorithmic Logic, OOP, Data Structures, Git & Kotlin Development.</h2>
+                <h2>Algorithmic Logic, OOP & Data Analysis for Sportsbook.</h2>
             </div>
             
             <div class="col-right">
                 <div class="resume-col">
                     <span class="accent-text">Experience</span>
-                    
                     <div class="resume-item">
-                        <h4>Minesweeper Game (Campo DEISIado)</h4>
+                        <h4>Minesweeper Game</h4>
                         <p class="role">Kotlin Developer • Academic Project</p>
-                        <p class="desc">Implemented game logic, including random bomb generation and recursive cell clearing using OOP principles to ensure code modularity.</p>
-                    </div>
-
-                    <div class="resume-item">
-                        <h4>Data Analysis System</h4>
-                        <p class="role">Java Developer • Academic Project</p>
-                        <p class="desc">Developing a Java application to process demographic data, implementing efficient data structures for large information sets.</p>
+                        <p class="desc">Implemented recursive logic and probability-based algorithms.</p>
                     </div>
                 </div>
 
                 <div class="resume-col">
                     <span class="accent-text">Education</span>
-                    
                     <div class="resume-item">
                         <h4>Universidade Lusófona</h4>
                         <p class="role">BSc in Computer Engineering</p>
                         <p class="desc">2025 - 2026</p>
-                    </div>
-
-                    <div class="resume-item">
-                        <h4>Escola Secundária do Cartaxo</h4>
-                        <p class="role">High School Diploma in Sciences</p>
-                        <p class="desc">2023 - 2025</p>
                     </div>
                 </div>
             </div>
@@ -379,71 +344,32 @@
     <section id="works" class="works-section">
         <div class="works-header">
             <span class="accent-text">Recent Works</span>
-            <h2>Check out some of my academic projects and technical developments.</h2>
+            <h2>Check out my latest technical developments.</h2>
         </div>
 
         <div class="works-grid">
             <a href="https://github.com/pedrorosa-06" target="_blank" class="work-card">
-                <div class="work-img">
-                    [ TERMINAL UI MOCKUP ]
-                </div>
-                <h4>Minesweeper (Campo DEISIado)</h4>
-                <p>Kotlin • Algorithms • OOP • Version Control (Git)</p>
+                <div class="work-img">[ MINESWEEPWER KOTLIN ]</div>
+                <h4>Campo DEISIado</h4>
+                <p>Kotlin • OOP • Algorithmic Logic</p>
             </a>
 
             <div class="work-card">
-                <div class="work-img">
-                    [ DATA STRUCTURES MOCKUP ]
-                </div>
-                <h4>Data Analysis System</h4>
-                <p>Java • Data Structures • OOP • Demographic Logic</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="swot-section">
-        <span class="accent-text">Self Assessment</span>
-        <div class="swot-grid">
-            <div class="swot-box">
-                <h4>Strengths</h4>
-                <ul>
-                    <li>Foundation in Algorithmic Logic.</li>
-                    <li>Fast Learner and Adaptable.</li>
-                    <li>Intermediate Kotlin and OOP skills.</li>
-                </ul>
-            </div>
-            <div class="swot-box">
-                <h4>Weaknesses</h4>
-                <ul>
-                    <li>Basic Version Control (Git).</li>
-                    <li>Limited industrial experience.</li>
-                </ul>
-            </div>
-            <div class="swot-box">
-                <h4>Opportunities</h4>
-                <ul>
-                    <li>Mastering new technologies.</li>
-                    <li>Developing real-world software solutions.</li>
-                </ul>
-            </div>
-            <div class="swot-box">
-                <h4>Threats</h4>
-                <ul>
-                    <li>Highly competitive junior market.</li>
-                    <li>Rapid evolution of technology stacks.</li>
-                </ul>
+                <div class="work-img">[ DATA ANALYSIS JAVA ]</div>
+                <h4>Demographic Analysis System</h4>
+                <p>Java • Data Structures • Statistics</p>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="footer-cta">
-            <a href="mailto:PedroRosa@gmail.com" class="btn">SAY HELLO.</a>
+            <a href="mailto:PedroAlexandreCRosa@gmail.com" class="btn">SAY HELLO.</a>
         </div>
         <div class="footer-info">
             <div class="footer-block">
                 <p class="title">Reach me at</p>
-                <p class="text">PedroRosa@gmail.com</p>
+                <p class="text">PedroAlexandreCRosa@gmail.com</p>
                 <p class="text">+351 963 231 991</p>
                 <p class="text">Santarém, Portugal</p>
             </div>
