@@ -1,25 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-PT">
 <head>
-  <title>Pedro Rosa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Rosa - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117; 
+            color: #c9d1d9; 
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #161b22;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            border: 1px solid #30363d;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #58a6ff;
+            margin-bottom: 5px;
+            font-size: 2.8em;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: #8b949e;
+            font-weight: 400;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #e6edf3;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.05rem;
+            color: #8b949e;
+        }
+
+        /* Secção de Projetos */
+        .project-card {
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .project-card h4 {
+            margin: 0 0 10px 0;
+            color: #58a6ff;
+        }
+
+        .project-card ul {
+            margin: 0;
+            padding-left: 20px;
+            color: #8b949e;
+            line-height: 1.6;
+        }
+
+        /* Etiquetas de Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            background-color: #238636;
+            color: #ffffff;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Botões de Links */
+        .links-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #30363d;
+        }
+
+        .link-button {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #21262d;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s, border-color 0.3s;
+            border: 1px solid #30363d;
+        }
+
+        .link-button:hover {
+            background-color: #30363d;
+            border-color: #8b949e;
+        }
+
+        .link-button.primary {
+            background-color: #238636;
+            border-color: rgba(240,246,252,0.1);
+        }
+
+        .link-button.primary:hover {
+            background-color: #2ea043;
+        }
+
+        .link-button.linkedin { 
+            background-color: #0a66c2; 
+            border-color: #0a66c2;
+        }
+        .link-button.linkedin:hover { 
+            background-color: #004182; 
+        }
+    </style>
 </head>
 <body>
 
-  <h1>Pedro Rosa</h1>
-  <p>Computer Engineering Student</p>
+    <div class="container">
+        <div class="header">
+            <h1>Pedro Rosa</h1>
+            <h2>Estudante de Engenharia Informática | Universidade Lusófona</h2>
+        </div>
+        
+        <h3>Sobre Mim</h3>
+        <p>Sou estudante do 1º ano de Engenharia Informática, apaixonado por tecnologia e por utilizar o desenvolvimento de software para resolver problemas reais. Com uma forte base em raciocínio lógico e algorítmico, dedico-me a aprender rapidamente e a construir projetos práticos. Procuro sempre contribuir para projetos inovadores enquanto construo a minha carreira na área tecnológica.</p>
+        
+        <h3>Projetos em Destaque</h3>
+        <div class="project-card">
+            <h4>Minesweeper Game (Campo DEISlado)</h4>
+            <ul>
+                <li>Desenvolvimento de um jogo ao estilo Minesweeper utilizando <strong>Kotlin</strong>.</li>
+                <li>Implementação de lógica de jogo avançada, incluindo geração aleatória de bombas e limpeza recursiva de células.</li>
+                <li>Aplicação de princípios de <strong>Programação Orientada a Objetos (OOP)</strong> para garantir um código modular e limpo.</li>
+                <li>Gestão de versionamento com Git e interação com o utilizador baseada em terminal.</li>
+            </ul>
+        </div>
 
-  <h2>About Me</h2>
-  <p>
-    I am a first-year Computer Engineering student passionate about technology and software development.
-  </p>
+        <h3>Competências Técnicas</h3>
+        <div class="skills-container">
+            <span class="skill-tag">Kotlin</span>
+            <span class="skill-tag">Algoritmos & Lógica</span>
+            <span class="skill-tag">Orientação a Objetos (OOP)</span>
+            <span class="skill-tag">Estruturas de Dados</span>
+            <span class="skill-tag">Git & Versionamento</span>
+            <span class="skill-tag">Resolução de Problemas</span>
+        </div>
 
-  <h2>Links</h2>
-  <ul>
-    <li><a href="#">Download CV</a></li>
-    <li><a href="#">Video Presentation</a></li>
-    <li><a href="#">Cover Letter</a></li>
-    <li><a href="#">LinkedIn</a></li>
-  </ul>
+        <div class="links-container">
+            <a href="#" class="link-button primary" target="_blank" rel="noopener noreferrer">Ver CV (PDF)</a>
+            <a href="#" class="link-button" target="_blank" rel="noopener noreferrer">Carta de Apresentação</a>
+            <a href="#" class="link-button" target="_blank" rel="noopener noreferrer">Vídeo Pitch</a>
+            <a href="#" class="link-button linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </div>
 
 </body>
 </html>
