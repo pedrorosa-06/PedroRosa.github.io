@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
-        /* --- ESTILOS GERAIS (DARK & MINIMALIST) --- */
         :root {
             --bg: #0d0d0d;
             --text-main: #f5f5f5;
@@ -26,7 +25,7 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4, .serif {
+        h1, h2, h3, h4 {
             font-family: 'Playfair Display', serif;
             font-weight: 700;
         }
@@ -40,12 +39,8 @@
             display: block;
         }
         
-        .accent-text::before {
-            content: "— ";
-            color: var(--text-main);
-        }
+        .accent-text::before { content: "— "; color: var(--text-main); }
 
-        /* --- NAVBAR --- */
         nav {
             display: flex;
             justify-content: space-between;
@@ -60,20 +55,9 @@
             box-sizing: border-box;
         }
 
-        .nav-brand {
-            font-weight: 600;
-            letter-spacing: 2px;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-        }
+        .nav-brand { font-weight: 600; letter-spacing: 2px; font-size: 0.85rem; text-transform: uppercase; }
 
-        .nav-links {
-            display: flex;
-            gap: 40px;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
+        .nav-links { display: flex; gap: 40px; list-style: none; margin: 0; padding: 0; }
 
         .nav-links a {
             color: var(--text-muted);
@@ -84,11 +68,8 @@
             transition: color 0.3s;
         }
 
-        .nav-links a:hover {
-            color: var(--text-main);
-        }
+        .nav-links a:hover { color: var(--text-main); }
 
-        /* --- HERO SECTION --- */
         .hero {
             height: 100vh;
             display: flex;
@@ -114,7 +95,6 @@
             text-decoration: none;
         }
 
-        /* --- ABOUT SECTION --- */
         .about-section {
             display: flex;
             border-top: 1px solid var(--border);
@@ -155,12 +135,7 @@
             max-width: 650px;
         }
 
-        /* Botões */
-        .btn-group {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+        .btn-group { display: flex; gap: 20px; flex-wrap: wrap; }
 
         .btn {
             display: inline-block;
@@ -176,26 +151,13 @@
             cursor: pointer;
         }
 
-        .btn:hover {
-            background: var(--text-main);
-            color: var(--bg);
-        }
+        .btn:hover { background: var(--text-main); color: var(--bg); }
 
-        /* --- EXPERTISE & EDUCATION --- */
-        .expertise-section {
-            padding: 120px 5%;
-            border-top: 1px solid var(--border);
-        }
+        .expertise-section { padding: 120px 5%; border-top: 1px solid var(--border); }
 
-        .expertise-grid {
-            display: flex;
-            gap: 60px;
-            margin-top: 50px;
-        }
+        .expertise-grid { display: flex; gap: 60px; margin-top: 50px; }
 
-        .col-left {
-            width: 40%;
-        }
+        .col-left { width: 40%; }
         
         .col-left h2 {
             font-size: 2.2rem;
@@ -205,25 +167,13 @@
             max-width: 400px;
         }
 
-        .col-right {
-            width: 60%;
-            display: flex;
-            gap: 60px;
-        }
+        .col-right { width: 60%; display: flex; gap: 60px; }
 
-        .resume-col {
-            flex: 1;
-        }
+        .resume-col { flex: 1; }
 
-        .resume-item {
-            margin-bottom: 50px;
-        }
+        .resume-item { margin-bottom: 50px; }
 
-        .resume-item h4 {
-            font-size: 1.2rem;
-            margin: 0 0 5px 0;
-            letter-spacing: 0.5px;
-        }
+        .resume-item h4 { font-size: 1.2rem; margin: 0 0 5px 0; letter-spacing: 0.5px; }
 
         .resume-item p.role {
             font-size: 0.85rem;
@@ -233,30 +183,17 @@
             letter-spacing: 1px;
         }
 
-        .resume-item p.desc {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-            margin: 0;
-        }
+        .resume-item p.desc { font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
 
-        /* --- RECENT WORKS --- */
         .works-section {
             padding: 120px 5%;
             border-top: 1px solid var(--border);
             background-color: #111111;
         }
 
-        .works-header {
-            margin-bottom: 80px;
-            max-width: 700px;
-        }
+        .works-header { margin-bottom: 80px; max-width: 700px; }
 
-        .works-header h2 {
-            font-size: 3rem;
-            line-height: 1.2;
-            margin-top: 20px;
-        }
+        .works-header h2 { font-size: 3rem; line-height: 1.2; margin-top: 20px; }
 
         .works-grid {
             display: grid;
@@ -264,16 +201,9 @@
             gap: 50px;
         }
 
-        .work-card {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            transition: opacity 0.3s;
-        }
+        .work-card { text-decoration: none; color: inherit; display: block; transition: opacity 0.3s; }
         
-        .work-card:hover {
-            opacity: 0.8;
-        }
+        .work-card:hover { opacity: 0.8; }
 
         .work-img {
             height: 350px;
@@ -289,23 +219,11 @@
             letter-spacing: 2px;
         }
 
-        .work-card h4 {
-            font-size: 1.5rem;
-            margin: 0 0 10px 0;
-        }
+        .work-card h4 { font-size: 1.5rem; margin: 0 0 10px 0; }
 
-        .work-card p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-            margin: 0;
-        }
+        .work-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
 
-        /* --- SWOT ANALYSIS --- */
-        .swot-section {
-            padding: 120px 5%;
-            border-top: 1px solid var(--border);
-        }
+        .swot-section { padding: 120px 5%; border-top: 1px solid var(--border); }
 
         .swot-grid {
             display: grid;
@@ -316,34 +234,15 @@
             margin-top: 60px;
         }
 
-        .swot-box {
-            background-color: var(--bg);
-            padding: 60px;
-        }
+        .swot-box { background-color: var(--bg); padding: 60px; }
 
-        .swot-box h4 {
-            font-size: 1.8rem;
-            margin: 0 0 30px 0;
-        }
+        .swot-box h4 { font-size: 1.8rem; margin: 0 0 30px 0; }
 
-        .swot-box ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+        .swot-box ul { list-style: none; padding: 0; margin: 0; }
 
-        .swot-box li {
-            font-size: 1rem;
-            color: var(--text-muted);
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
+        .swot-box li { font-size: 1rem; color: var(--text-muted); margin-bottom: 15px; line-height: 1.6; }
 
-        /* --- FOOTER / CONTACT --- */
-        footer {
-            border-top: 1px solid var(--border);
-            display: flex;
-        }
+        footer { border-top: 1px solid var(--border); display: flex; }
 
         .footer-cta {
             width: 60%;
@@ -355,11 +254,7 @@
             background-color: #111111;
         }
 
-        .footer-cta .btn {
-            padding: 30px 60px;
-            font-size: 1.2rem;
-            border: 1px solid var(--text-muted);
-        }
+        .footer-cta .btn { padding: 30px 60px; font-size: 1.2rem; border: 1px solid var(--text-muted); }
 
         .footer-info {
             width: 40%;
@@ -387,12 +282,8 @@
             transition: color 0.3s;
         }
 
-        .footer-block a:hover {
-            color: #ffffff;
-            text-decoration: underline;
-        }
+        .footer-block a:hover { color: #ffffff; text-decoration: underline; }
 
-        /* --- RESPONSIVIDADE --- */
         @media (max-width: 900px) {
             nav { display: none; } 
             .hero h1 { font-size: 3.5rem; }
@@ -435,7 +326,7 @@
             <p class="desc">Computer Engineering student at Universidade Lusófona with a solid background in Sciences. I am passionate about how technology solves real-world problems and I am currently focused on mastering software development and programming logic.</p>
             
             <div class="btn-group">
-                <a href="CV_Pedro_Rosa.pdf" class="btn" target="_blank">Download CV</a>
+                <a href="CV_Pedro_Rosa.pdf.pdf" class="btn" target="_blank">Download CV</a>
                 <a href="#" class="btn" target="_blank">Video Pitch</a>
                 <a href="#" class="btn" target="_blank">Cover Letter</a>
             </div>
